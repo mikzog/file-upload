@@ -60,12 +60,12 @@ const CompanyLogo = () => {
         }
       })
 
-      // const formData = new FormData();
-      // formData.append("file", file, file.name);
+      const formData = new FormData();
+      formData.append("file", file, file.name);
 
       req.open('POST', URL)
-      // req.send(formData);
-      req.send(arrayBuffer)
+      req.send(formData);
+    //   req.send(arrayBuffer)
     })
   }
   return (
